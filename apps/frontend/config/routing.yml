@@ -1,16 +1,23 @@
 # You can find more information about this file on the symfony website:
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
 
+url_builder:
+  url:   /url-builder
+  param: { module: default, action: build }
+
+signup:
+  url:   /signup
+  param: { module: signup, action: index }
+
 # default rules
 homepage:
   url:   /
   param: { module: default, action: index }
 
-# generic rules
-# please, remove them by adding more specific rules
-default_index:
-  url:   /:module
-  param: { action: index }
+gen:
+  url: /gen/*
+  param: { module: generate, action: index }
 
 default:
-  url:   /:module/:action/*
+  url:   /*
+  param: { module: default, action: index }
