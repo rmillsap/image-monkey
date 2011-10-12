@@ -11,16 +11,14 @@ To use image monkey, you must register and get an access key to identify yoursel
 Then simply request an image by providing the encoded URL of the image, your access key, and the new size constraints.  For example
     
 ### Here is the URL format
-    http://imgmky.com/<<yourkey>>/<<encoded-url>>/<<img-size>>
+    http://imgmky.com/gen?key=<<yourkey>>&url=<<encoded-url>>&size=<<img-size>>
         
 ### For example, let's say I had an image at http://www.example.com/image.jpg and I wanted a 100x100 version of this image
-    http://imgmkey.com/mykey/http://www.example.com/image.jpg/100x100
+    http://imgmkey.com/gen?key=ABC&url=http%3A%2F%2Fwww.example.com%2Fimage.jpg&size=100x100
     
 ### Go Image Monkey Go!
 
 Image Monkey will generate that image and provide it for you.
-
-
 
 # Backlog
 ## Create customized instruction profiles for reuse
