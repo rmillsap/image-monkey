@@ -1,0 +1,9 @@
+log/*.log
+*.log
+/tmp/
+*.swp
+*~
+.project
+.DS_Store
+cache/*
+web/uploads
